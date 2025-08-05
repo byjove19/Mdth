@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDTH Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="logo">
+      <a href="#">
+          <img src="images/MDTH LOGO.jpg" alt="MDTH Logo" class="logo-image">
+      </a>
+  </div>
+
+  
+  <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li class="dropdown">
+        <a href="#courses">Courses</a>
+        <span class="caret"></span>
+        <ul class="dropdown-menu">
+          <li><a href="web-development.html">Web Development</a></li>
+          <li><a href="#data-science">Data Science</a></li>
+          <li><a href="#ui-ux">UI/UX Design</a></li>
+          <li><a href="#digital-marketing">Digital Marketing</a></li>
+        </ul>
+      </li>
+    
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#blog">Blog</a></li>
+  </ul>
+  <div class="auth-buttons">
+      <a href="signup.html" class="btn-signup">Sign Up</a>
+      <a href="login.html" class="btn-login">Login</a>
+  </div>
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+  </div>
+</nav>
+<!-- Side Menu (hidden by default) -->
+<div class="side-menu" id="sideMenu">
+  <div class="side-menu-header">
+    <img src="images/MDTH_LOGO-removebg-preview.png" alt="Logo" class="side-menu-logo">
+    <div class="cancel-icon" id="cancelIcon">
+      <span>&times;</span>
+    </div>
+  </div>
+  <hr class="menu-separator">
+  <div class="theme-switcher">
+    <p>Switch Theme</p>
+    <button id="themeToggle" class="theme-icon">
+      <i class="fa fa-moon-o" aria-hidden="true"></i>
+    </button>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li class="dropdown">
+      <a href="#courses">Courses</a>
+      <span class="caret"></span>
+      <ul class="dropdown-menu">
+        <li><a href="web-development.html">Web Development</a></li>
+        <li><a href="#data-science">Data Science</a></li>
+        <li><a href="#ui-ux">UI/UX Design</a></li>
+        <li><a href="#digital-marketing">Digital Marketing</a></li>
+      </ul>
+    </li>
+  
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#blog">Blog</a></li>
+  </ul>
+  <div class="auth-buttons">
+    <a href="signup.html" class="btn-signup">Sign Up</a>
+    <a href="login.html" class="btn-login">Login</a>
+  </div>
+  <hr class="menu-separator">
+</div>
+
+
+
+   <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <p>Get Success Together</p>
+        <h1>Exploring the <span>Next</span> generation of tech</h1>
+        <p>Affordable,accessible and industry aligned Tech education for all, to help thrive in the digital age</p>
+        <a href="get-started.html" class="btn-get-started">Get Started</a>
+       
+        <a href="#learn-more" class="learn-more">
+            Learn More <span class="arrow">&rarr;</span>
+        </a>
+    </div>
+    <div class="hero-image">
+        <img src="images/hero-image.png" alt="Hero Image">
+    </div>
+</section>
+
+<!-- Brands Section -->
+<div class="brands-section">
+  <div class="brands">
+    <div class="brand">
+      <img src="images/Zapier logo image.png" alt="Zapier">
+    </div>
+    <div class="brand">
+      <img src="images/Spotify logo image.png" alt="Spotify">
+    </div>
+    <div class="brand">
+      <img src="images/Zoom logo image.png" alt="Zoom">
+    </div>
+    <div class="brand">
+      <img src="images/Amazon logo image.png" alt="Amazon">
+    </div>
+    <div class="brand">
+      <img src="images/Adobe logo image.png" alt="Adobe">
+    </div>
+    <div class="brand">
+      <img src="images/Notion logo image.png" alt="Notion">
+    </div>
+    <div class="brand">
+      <img src="images/Netflix logo image.png" alt="Netflix">
+    </div>
+  </div>
+</div>
+
+
+  
+  <section class="creative-solutions">
+    <div class="container">
+        <p1>Why Choose Us</p1>
+        <h2>Creative and Unique Solutions</h2>
+        <p>We adhere to the highest standards of quality in all our products and services. From design and development to manufacturing.</p>
+        <!-- Icon Boxes -->
+        <div class="icon-boxes">
+            <div class="icon-box">
+                <div class="icon">
+                    <i class="fas fa-book"></i> <!-- Font Awesome icon for Curriculum -->
+                </div>
+                <h3>Curriculum</h3>
+                <p>Our courses are designed with input from top industry experts.</p>
+            </div>
+            <div class="icon-box">
+                <div class="icon">
+                    <i class="fas fa-naira-sign"></i> <!-- Font Awesome icon for Affordable -->
+                </div>
+                <h3>Affordable and Inclusive</h3>
+                <p>We make tech education accessible for everyone.</p>
+            </div>
+            <div class="icon-box">
+                <div class="icon">
+                    <i class="fas fa-hands"></i> <!-- Font Awesome icon for Hands On -->
+                </div>
+                <h3>Hands On Learning</h3>
+                <p>We work on real-world projects that prepare you for the industry.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<div class="courses-section">
+    <div class="head-course">
+        <p class="Exp"><b>Explore Programs</b></p>
+        <h2 class="section-title">Our Most Popular Class</h2>
+        <p class="section-description">
+           Let's join our famous classes, the knowledge provided will definately be useful for you.
+      </p>
+    </div>
+    
+    <div class="slider-container">
+        <div class="courses-slider">
+            <!-- Course Card 1 -->
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="images/program 1 image.png" alt="Programming Essentials">
+                    <span class="course-duration"><i class="fa-regular fa-clock"></i> 3 Months</span>
+                </div>
+                <div class="course-tags">
+                    <span class="tag design-tag">
+                        <i class="fas fa-th-large"></i> Design
+                    </span>                    
+                    <span class="tag beginner-tag">Beginner</span>
+                </div>
+                <div class="course-content">
+                    <h3 class="course-title">Programming Essentials</h3>
+                    <p class="course-description">
+                        Learn the basics of coding and programming languages.
+                    </p>
+                    <div class="course-rating"><span>4.5</span>⭐⭐⭐⭐⭐ <span1>(125)</span1></div> 
+                    <div class="course-footer">
+                        <span class="course-price">₦30,000</span>
+                        <button class="join-now-btn">Join Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 2 -->
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="images/program 2 image.jpg" alt="UX/UI Design Essentials">
+                    <span class="course-duration"><i class="fa-regular fa-clock"></i> 3 Months</span>
+                </div>
+                <div class="course-tags">
+                    <span class="tag design-tag">
+                        <i class="fas fa-th-large"></i> Design
+                    </span>                    
+                    <span class="tag beginner-tag">Beginner</span>
+                </div>
+                <div class="course-content">
+                    <h3 class="course-title">UX/UI Design Essentials</h3>
+                    <p class="course-description">
+                        Master the principles of user interface and user experience design.
+                    </p>
+                    <div class="course-rating"><span>4.5</span>⭐⭐⭐⭐⭐  <span1>(125)</span1></div> 
+                    <div class="course-footer">
+                        <span class="course-price">₦30,000</span>
+                        <button class="join-now-btn">Join Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Card 3 -->
+            <div class="course-card">
+                <div class="course-image">
+                    <img src="images/program 3 image .jpg" alt="Data Analytics Essentials">
+                    <span class="course-duration"><i class="fa-regular fa-clock"></i> 3 Months</span>
+                </div>
+                <div class="course-tags">
+                    <span class="tag design-tag">
+                        <i class="fas fa-th-large"></i> Design
+                    </span>                    
+                    <span class="tag beginner-tag">Beginner</span>
+                </div>
+                <div class="course-content">
+                    <h3 class="course-title">Data Analytics Essentials</h3>
+                    <p class="course-description">
+                        Learn to process and analyze data for business decisions.
+                    </p>
+                <div class="course-rating"><span>4.5</span>⭐⭐⭐⭐⭐  <span1>(125)</span1></div> 
+                    <div class="course-footer">
+                        <span class="course-price">₦30,000</span>
+                        <button class="join-now-btn">Join Now</button>
+                    </div>
+                </div>
+            </div>
+  </div>
+</div>
+
+
+<!-- Slider Indicators -->
+<div class="slider-indicators">
+<span class="indicator active"></span>
+<span class="indicator"></span>
+<span class="indicator"></span>
+</div>
+
+<!-- Explore All Programs Button -->
+<button class="explore-btn">Explore All Programs</button>
+</div>
+
+
+
+
+
+
+<!-- Header Section -->
+<header class="header">
+    <div class="header-content">
+      <h1>MDTH Design project</h1>
+      <p>
+      The MDTH design project showcase the innovative and creative work produced by our
+      design student highlighting their growth and mastery of various design principle.
+      </p>
+    </div>
+    <a href="view-all.html" class="btn-view-all">View All</a>
+  </header>
+
+  <!-- Courses Section -->
+  <section class="courses">
+    <div class="course-card">
+      <img src="images/course image 1.jpg" alt="Advanced JavaScript">
+      <div class="course-info">
+        <span class="tag design-tag">
+            <i class="fas fa-th-large"></i> Design
+        </span> 
+        <h3>Advanced JavaScript</h3>
+        <p>
+        Take your JavaScript skills to the next level. Explore advanced concepts like closures,
+        prototypes asynchronous programming and ES6 features. Build complex applications with confidence.
+        </p>
+        <button>View Project</button>
+      </div>
+    </div>
+    <div class="course-card">
+      <img src="images/course image 2.jpg" alt="Advanced JavaScript">
+      <div class="course-info">
+        <span class="tag design-tag">
+            <i class="fas fa-th-large"></i> Design
+        </span> 
+        <h3>Advanced JavaScript</h3>
+        <p>
+        Take your JavaScript skills to the next level. Explore advanced concepts like closures,
+        prototypes asynchronous programming and ES6 features. Build complex applications with confidence.
+        </p>
+        <button>View Project</button>
+      </div>
+    </div>
+  </section>
+
+<!-- About Us Section -->
+<section class="about">
+    <div class="about-text">
+      <p class="learn-about"><span>Learn about us</span></p>
+      <h2>About Making A Difference Tech Hub</h2>
+      <p>
+        Making a difference tech hub is on a mission to empower individuals from all backgrounds with the tech skills and
+        knowledge they need to thrive in today's rapidly revolving digital world. We believe that everyone, regardless
+        of their circumstances, should have access to affordable and high quality education 🌐🚀
+      </p>
+      <a href="#" class="about-btn">Learn More</a>
+    </div>
+    <div class="about-images">
+      <img src="images/Smiling Student.jpg" alt="Smiling Student" class="main-image">
+      <img src="images/Student with Books.jpg" alt="Student with Books" class="overlay-image">
+    </div>
+  </section>
+  
+
+  
+
+  <!-- Call-to-Action Section -->
+  <section class="cta">
+    <div class="cta-image">
+      <img src="images/Students Learning.jpg" alt="Students Learning">
+    </div>
+    <div class="cta-text">
+      <h2>Ready to start your amazing tech journey?</h2>
+      <p>Start your tech exciting journey with MDTH with the best courses in the industry. The future awaits.</p>
+      <a href="get-started.html" class="btn-get-started">Get Started</a>
+      <a href="#learn-more" class="learn-more">
+          Learn More <span class="arrow">&rarr;</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="testimonial-section">
+    <h2>Experiences Shared by Our Clients</h2>
+    <p>Discover how our clients have found solutions and satisfaction with our services.</p>
+    <div class="testimonial-slider">
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="path/to/image1.jpg" alt="Adebayo Adekunle" class="testimonial-img">
+        <p>MDTH Industry is a great success partner. The team is incredibly helpful, providing the best project management services.</p>
+        <h4>Adebayo Adekunle</h4>
+        <span>CEO, Adekunle Enterprises</span>
+      </div>
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="path/to/image2.jpg" alt="Chioma Okafor" class="testimonial-img">
+        <p>MDTH has the most skilled professionals who make the project seamless and successful.</p>
+        <h4>Chioma Okafor</h4>
+        <span>Founder, Creative Vision</span>
+      </div>
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="path/to/image3.jpg" alt="Tunde Ogunleye" class="testimonial-img">
+        <p>The professionalism and skill of MDTH's team made our project a success. Highly recommend!</p>
+        <h4>Tunde Ogunleye</h4>
+        <span>Manager, Peak Solutions</span>
+      </div>
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="path/to/image4.jpg" alt="Aisha Bello" class="testimonial-img">
+        <p>The team at MDTH went above and beyond to meet our goals. The results were outstanding!</p>
+        <h4>Aisha Bello</h4>
+        <span>Director, Bello Consulting</span>
+      </div>
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="path/to/image5.jpg" alt="Segun Alabi" class="testimonial-img">
+        <p>MDTH provided us with the expertise we needed to transform our business. Excellent service!</p>
+        <h4>Segun Alabi</h4>
+        <span>Chief Operating Officer, Alabi Systems</span>
+      </div>
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="path/to/image6.jpg" alt="Ngozi Nwachukwu" class="testimonial-img">
+        <p>MDTH's commitment to quality and their attention to detail were invaluable to our project's success.</p>
+        <h4>Ngozi Nwachukwu</h4>
+        <span>Founder, Nwachukwu Innovations</span>
+      </div>
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="path/to/image7.jpg" alt="Kehinde Balogun" class="testimonial-img">
+        <p>The expertise of MDTH's team was crucial in delivering our project on time and within budget. Highly recommended!</p>
+        <h4>Kehinde Balogun</h4>
+        <span>Project Manager, Balogun Builders</span>
+      </div>
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="path/to/image8.jpg" alt="Abiola Oladipo" class="testimonial-img">
+        <p>Working with MDTH was a game-changer for our business. Their professionalism and knowledge were exceptional.</p>
+        <h4>Abiola Oladipo</h4>
+        <span>CEO, Oladipo Ventures</span>
+      </div>
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="path/to/image9.jpg" alt="Funke Adeyemi" class="testimonial-img">
+        <p>MDTH delivered exactly what we needed. Their team was extremely skilled and responsive throughout the project.</p>
+        <h4>Funke Adeyemi</h4>
+        <span>Head of Operations, Adeyemi Logistics</span>
+      </div>
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="path/to/image10.jpg" alt="Emeka Uche" class="testimonial-img">
+        <p>Our experience with MDTH was fantastic! Their insights and dedication made all the difference in our project's success.</p>
+        <h4>Emeka Uche</h4>
+        <span>Senior Manager, Uche Enterprises</span>
+      </div>
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="path/to/image11.jpg" alt="Zainab Yusuf" class="testimonial-img">
+        <p>MDTH's project management team went above and beyond to ensure the success of our venture. Truly impressive!</p>
+        <h4>Zainab Yusuf</h4>
+        <span>Founder, Yusuf Interiors</span>
+      </div>
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left quote-icon"></i>
+        <img src="path/to/image11.jpg" alt="Ibrahim Danjuma" class="testimonial-img">
+        <p>MDTH's project management team exceeded my expectations in ensuring the success of our venture.</p>
+        <h4>Ibrahim Danjuma</h4>
+        <span>Manager, Danjuma Holdings</span>
+      </div>
+    </div>
+
+    <div class="slider-controls">
+      <button id="prev-btn">&larr;</button>
+      <button id="next-btn">&rarr;</button>
+    </div>
+  </section>
+  
+    
+  
+    
+  
+      
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-contact">
+    <img src="images/MDTH_LOGO-removebg-preview.png" alt="MDTH Logo" class="logo-image-footer">
+        <p><i class="fa-regular fa-envelope"></i> mdthdig@gmail.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> Lagos, Nigeria</p>
+        <p><i class="fa-solid fa-phone"></i> (+234) 816 0330 156</p>
+
+      </div>
+      <div class="footer-links">
+        <h4>PAGES</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Project</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>SOCIAL MEDIA</h4>
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Dribble</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>UTILITIES</h4>
+        <ul>
+          <li><a href="#">Style Guide</a></li>
+          <li><a href="#">Change log</a></li>
+          <li><a href="#">Licenses</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy;2024 All Rights Reserved <span>MDTHdig</span></p>
+    </div>
+  </footer>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
