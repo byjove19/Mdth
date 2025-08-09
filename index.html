@@ -54,81 +54,83 @@
    
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#">
-                <img src="images/MDTH_LOGO-removebg-preview.png" alt="MDTH Logo">
-            </a>
-        </div>
-        
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li class="dropdown">
-                <a href="#courses">Courses</a>
-                <span class="caret"><i class="fas fa-chevron-down"></i></span>
-                <ul class="dropdown-menu">
-                    <li><a href="web-development.html">Web Development</a></li>
-                    <li><a href="#data-science">Data Science</a></li>
-                    <li><a href="#ui-ux">UI/UX Design</a></li>
-                    <li><a href="#digital-marketing">Digital Marketing</a></li>
-                </ul>
-            </li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#blog">Blog</a></li>
-        </ul>
-        
-        <div class="auth-buttons">
-            <a href="signup.html" class="btn btn-signup">Sign Up</a>
-            <a href="login.html" class="btn btn-login">Login</a>
-        </div>
-        
-        <!-- Hamburger Icon -->
-        <div class="hamburger" id="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
-    
-    <!-- Side Menu (hidden by default) -->
-    <div class="side-menu" id="sideMenu">
-        <div class="side-menu-header">
-            <img src="images/MDTH_LOGO-removebg-preview.png" alt="Logo" class="side-menu-logo">
-            <div class="cancel-icon" id="cancelIcon">
-                <span>&times;</span>
-            </div>
-        </div>
-        <hr class="menu-separator">
-        <div class="theme-switcher">
-            <p>Switch Theme</p>
-            <button id="themeToggle" class="theme-icon">
-                <i class="fas fa-moon"></i>
-            </button>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li class="dropdown">
-                <a href="#courses">Courses</a>
-                <span class="caret"><i class="fas fa-chevron-down"></i></span>
-                <ul class="dropdown-menu">
-                    <li><a href="web-development.html">Web Development</a></li>
-                    <li><a href="#data-science">Data Science</a></li>
-                    <li><a href="#ui-ux">UI/UX Design</a></li>
-                    <li><a href="#digital-marketing">Digital Marketing</a></li>
-                </ul>
-            </li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#blog">Blog</a></li>
-        </ul>
-        <div class="auth-buttons">
-            <a href="signup.html" class="btn btn-signup">Sign Up</a>
-            <a href="login.html" class="btn btn-login">Login</a>
-        </div>
-        <hr class="menu-separator">
+    <body>
+  <nav class="navbar">
+    <div class="logo">
+        <a href="#">
+            <img src="images/MDTH_LOGO-removebg-preview.png" alt="MDTH Logo">
+        </a>
     </div>
+    
+    <ul class="nav-links" id="mainNav">
+        <li><a href="#home">Home</a></li>
+        <li class="dropdown">
+            <a href="#courses">Courses <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="web-development.html">Web Development</a></li>
+                <li><a href="#data-science">Data Science</a></li>
+                <li><a href="#ui-ux">UI/UX Design</a></li>
+                <li><a href="#digital-marketing">Digital Marketing</a></li>
+            </ul>
+        </li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#blog">Blog</a></li>
+    </ul>
+    
+    <div class="auth-buttons">
+        <!-- Dark Mode Toggle for Desktop -->
+        <button id="desktopThemeToggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+        <a href="signup.html" class="btn btn-signup">Sign Up</a>
+        <a href="login.html" class="btn btn-login">Login</a>
+    </div>
+    
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburgerBtn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+
+<!-- Side Menu (hidden by default) -->
+<div class="side-menu" id="sideMenu">
+    <div class="side-menu-header">
+        <img src="images/MDTH_LOGO-removebg-preview.png" alt="Logo" class="side-menu-logo">
+        <div class="cancel-icon" id="closeMenuBtn">
+            <span>&times;</span>
+        </div>
+    </div>
+    <hr class="menu-separator">
+    <div class="theme-switcher">
+        <p>Switch Theme</p>
+        <button id="themeToggle" class="theme-icon">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+    <ul class="mobile-nav-links">
+        <li><a href="#home">Home</a></li>
+        <li class="mobile-dropdown">
+            <a href="#courses" class="dropdown-toggle">Courses <i class="fas fa-chevron-down"></i></a>
+            <ul class="mobile-dropdown-menu">
+                <li><a href="web-development.html">Web Development</a></li>
+                <li><a href="#data-science">Data Science</a></li>
+                <li><a href="#ui-ux">UI/UX Design</a></li>
+                <li><a href="#digital-marketing">Digital Marketing</a></li>
+            </ul>
+        </li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#blog">Blog</a></li>
+    </ul>
+    <div class="mobile-auth-buttons">
+        <a href="signup.html" class="btn btn-signup">Sign Up</a>
+        <a href="login.html" class="btn btn-login">Login</a>
+    </div>
+    <hr class="menu-separator">
+</div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -150,33 +152,21 @@
             <img src="images/hero-image.png" alt="People learning tech skills">
         </div>
     </section>
+<!-- Trusted By Section -->
+<section class="trusted-by">
+  <h2 class="trusted-title">Trusted by learners & professionals worldwide</h2>
+  <div class="brand-logos">
+    <img src="images/google logo.png" alt="Google" />
+    <img src="images/microsoft-logo.png" alt="Microsoft" />
+    <img src="images/github.png" alt="GitHub" />
+    <img src="images/slack.png" alt="Slack" />
+    <img src="images/zoom.png" alt="Zoom" />
+    <img src="images/notion.png" alt="Notion" />
+    <img src="images/figma.png" alt="Figma" />
+  </div>
+</section>
 
-    <!-- Brands Section -->
-    <div class="brands-section">
-        <div class="brands">
-            <div class="brand">
-                <img src="images/Zapier logo image.png" alt="Zapier">
-            </div>
-            <div class="brand">
-                <img src="images/Spotify logo image.png" alt="Spotify">
-            </div>
-            <div class="brand">
-                <img src="images/Zoom logo image.png" alt="Zoom">
-            </div>
-            <div class="brand">
-                <img src="images/Amazon logo image.png" alt="Amazon">
-            </div>
-            <div class="brand">
-                <img src="images/Adobe logo image.png" alt="Adobe">
-            </div>
-            <div class="brand">
-                <img src="images/Notion logo image.png" alt="Notion">
-            </div>
-            <div class="brand">
-                <img src="images/Netflix logo image.png" alt="Netflix">
-            </div>
-        </div>
-    </div>
+
 
     <!-- Features Section -->
     <section class="creative-solutions">
@@ -543,7 +533,7 @@
                 <h4>PAGES</h4>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="/about.html">About</a></li>
                     <li><a href="#">Project</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
@@ -574,6 +564,73 @@
 
     <script>"js/script.js" </script>
     <script>
+            document.addEventListener('DOMContentLoaded', function() {
+        // Mobile Menu Toggle
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const closeMenuBtn = document.getElementById('closeMenuBtn');
+        const sideMenu = document.getElementById('sideMenu');
+        
+        hamburgerBtn.addEventListener('click', function() {
+            sideMenu.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            hamburgerBtn.classList.add('active');
+        });
+        
+        closeMenuBtn.addEventListener('click', function() {
+            sideMenu.classList.remove('active');
+            document.body.style.overflow = 'auto';
+            hamburgerBtn.classList.remove('active');
+        });
+        
+        // Mobile Dropdown Toggle
+        const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+        dropdownToggles.forEach(toggle => {
+            toggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                const dropdownMenu = this.nextElementSibling;
+                dropdownMenu.classList.toggle('active');
+                this.classList.toggle('active');
+            });
+        });
+        
+        // Close menu when clicking on a link
+        const mobileLinks = document.querySelectorAll('.mobile-nav-links a:not(.dropdown-toggle)');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                sideMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+                hamburgerBtn.classList.remove('active');
+            });
+        });
+        
+        // Desktop Dropdown
+        const desktopDropdowns = document.querySelectorAll('.dropdown');
+        desktopDropdowns.forEach(dropdown => {
+            dropdown.addEventListener('mouseenter', function() {
+                if (window.innerWidth > 992) {
+                    this.querySelector('.dropdown-menu').style.opacity = '1';
+                    this.querySelector('.dropdown-menu').style.visibility = 'visible';
+                }
+            });
+            
+            dropdown.addEventListener('mouseleave', function() {
+                if (window.innerWidth > 992) {
+                    this.querySelector('.dropdown-menu').style.opacity = '0';
+                    this.querySelector('.dropdown-menu').style.visibility = 'hidden';
+                }
+            });
+        });
+        
+        // Close menu when window is resized
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 992) {
+                sideMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+                hamburgerBtn.classList.remove('active');
+            }
+        });
+    });
+    
         // Enhanced slider functionality
     document.addEventListener('DOMContentLoaded', function() {
         const slider = document.querySelector('.courses-slider');
@@ -642,6 +699,38 @@
             isScrolling = true;
         });
     });
+    // Dark Mode Toggle Functionality
+const desktopThemeToggle = document.getElementById('desktopThemeToggle');
+const mobileThemeToggle = document.getElementById('themeToggle');
+
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', isDarkMode);
+    
+    // Update icon
+    const icons = document.querySelectorAll('.theme-toggle, .theme-icon');
+    icons.forEach(icon => {
+        if (isDarkMode) {
+            icon.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            icon.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+    });
+}
+
+// Check for saved user preference
+if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark-mode');
+    // Set initial icon to sun if dark mode is enabled
+    document.querySelectorAll('.theme-toggle, .theme-icon').forEach(icon => {
+        icon.innerHTML = '<i class="fas fa-sun"></i>';
+    });
+}
+
+// Event listeners
+desktopThemeToggle.addEventListener('click', toggleDarkMode);
+mobileThemeToggle.addEventListener('click', toggleDarkMode);
     </script>
 
 </body>
